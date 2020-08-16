@@ -1,0 +1,11 @@
+<!doctype html>
+{% extends "basicApp/base.html"%}
+        {% block body_block %}
+
+<img src="https://user-images.githubusercontent.com/4060187/34948491-454de294-f9db-11e7-8fc5-86985ba05be8.png" alt="">
+<h1>welcome to relative</h1>
+                <!-- "basicApp" is coming from url.py of the var app_name    -->
+    <a href="{% url 'basicApp:other' %}">the other page</a>
+    <a href="{% url 'admin:index' %}">the admin page</a>
+    <a href="{% url 'index' %}">the index page</a>
+    {% endblock %}
